@@ -12,11 +12,12 @@ GraphQL Server allows you to easily use [GraphiQL](https://github.com/graphql/gr
 
 ```js
 const options = {
-  endpointURL: String, // URL for the GraphQL endpoint this instance of GraphiQL serves
+  endpointURL: String, // URL for the GraphQL POST endpoint this instance of GraphiQL serves
   query?: String, // optional query to pre-populate the GraphiQL UI with
   operationName?: String, // optional operationName to pre-populate the GraphiQL UI with
   variables?: Object, // optional variables to pre-populate the GraphiQL UI with
   result?: Object, // optional result to pre-populate the GraphiQL UI with
+  passHeader?: string, // a string that will be added to the outgoing request header object (i.e "'Authorization': 'Bearer lorem ipsum'")
 }
 ```
 
