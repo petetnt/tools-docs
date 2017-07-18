@@ -17,7 +17,7 @@ const options = {
   operationName?: String, // optional operationName to pre-populate the GraphiQL UI with
   variables?: Object, // optional variables to pre-populate the GraphiQL UI with
   result?: Object, // optional result to pre-populate the GraphiQL UI with
-  passHeader?: string, // a string that will be added to the outgoing request header object (i.e "'Authorization': 'Bearer lorem ipsum'")
+  passHeader?: String, // a string that will be added to the outgoing request header object (e.g "'Authorization': 'Bearer lorem ipsum'")
 }
 ```
 
