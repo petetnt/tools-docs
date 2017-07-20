@@ -27,7 +27,6 @@ sidebar_categories:
     - apollo-server/setup
     - apollo-server/requests
     - apollo-server/graphiql
-    - apollo-server/migration-apollo-server
     - apollo-server/migration-hapi
     - apollo-server/migration
   Subscriptions:
