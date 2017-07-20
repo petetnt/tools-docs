@@ -61,7 +61,7 @@ import express from 'express';
 import {
   graphqlExpress,
   graphiqlExpress,
-} from 'graphql-server-express';
+} from 'apollo-server-express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { execute, subscribe } from 'graphql';
@@ -87,7 +87,7 @@ server.use('/graphiql', graphiqlExpress({
 // Wrap the Express server
 const ws = createServer(server);
 ws.listen(PORT, () => {
-  console.log(`GraphQL Server is now running on http://localhost:${PORT}`);
+  console.log(`Apollo Server is now running on http://localhost:${PORT}`);
   // Set up the WebSocket for handling GraphQL subscriptions
   new SubscriptionServer({
     execute,

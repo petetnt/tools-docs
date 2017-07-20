@@ -4,11 +4,11 @@ order: 202
 description: How to add a GraphQL endpoint to your server.
 ---
 
-GraphQL Server has a slightly different API depending on which server integration you are using, but all of the packages share the same core implementation and options format.
+Apollo Server has a slightly different API depending on which server integration you are using, but all of the packages share the same core implementation and options format.
 
-<h2 id="graphqlOptions">GraphQL Server options</h2>
+<h2 id="graphqlOptions">Apollo Server options</h2>
 
-GraphQL Server accepts a `GraphQLOptions` object as its single argument. The `GraphQLOptions` object has the following properties:
+Apollo Server accepts a `GraphQLOptions` object as its single argument. The `GraphQLOptions` object has the following properties:
 
 ```js
 // options object
@@ -38,7 +38,7 @@ const GraphQLOptions = {
 
 <h3 id="options-function">Passing options as a function</h3>
 
-Alternatively, GraphQL Server can accept a function which takes the request as input and returns a GraphQLOptions object or a promise that resolves to one:
+Alternatively, Apollo Server can accept a function which takes the request as input and returns a GraphQLOptions object or a promise that resolves to one:
 
 ```js
 // example options function (for express)
@@ -56,12 +56,12 @@ Currently, the ES6 Module import syntax used in these examples is not implemente
 
 <h2 id="graphqlExpress">Using with Express</h2>
 
-The following code snippet shows how to use GraphQL Server with Express:
+The following code snippet shows how to use Apollo Server with Express:
 
 ```js
 import express from 'express';
 import bodyParser from 'body-parser';
-import { graphqlExpress } from 'graphql-server-express';
+import { graphqlExpress } from 'apollo-server-express';
 
 const PORT = 3000;
 
@@ -74,12 +74,12 @@ app.listen(PORT);
 
 <h2 id="graphqlConnect">Using with Connect</h2>
 
-Connect is so similar to Express that the integration is in the same package. The following code snippet shows how to use GraphQL Server with Connect:
+Connect is so similar to Express that the integration is in the same package. The following code snippet shows how to use Apollo Server with Connect:
 
 ```js
 import connect from 'connect';
 import bodyParser from 'body-parser';
-import { graphqlConnect } from 'graphql-server-express';
+import { graphqlConnect } from 'apollo-server-express';
 import http from 'http';
 
 const PORT = 3000;
@@ -96,11 +96,11 @@ The arguments passed to `graphqlConnect` are the same as those passed to `graphq
 
 <h2 id="graphqlHapi">Using with Hapi</h2>
 
-The following code snippet shows how to use GraphQL Server with Hapi:
+The following code snippet shows how to use Apollo Server with Hapi:
 
 ```js
 import hapi from 'hapi';
-import { graphqlHapi } from 'graphql-server-hapi';
+import { graphqlHapi } from 'apollo-server-hapi';
 
 const server = new hapi.Server();
 
@@ -137,13 +137,13 @@ server.register({
 
 <h2 id="graphqlKoa">Using with Koa 2</h2>
 
-The following code snippet shows how to use GraphQL Server with Koa:
+The following code snippet shows how to use Apollo Server with Koa:
 
 ```js
 import koa from 'koa';
 import koaRouter from 'koa-router';
 import koaBody from 'koa-bodyparser';
-import { graphqlKoa } from 'graphql-server-koa';
+import { graphqlKoa } from 'apollo-server-koa';
 
 const app = new koa();
 const router = new koaRouter();

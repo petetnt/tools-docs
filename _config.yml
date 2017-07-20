@@ -23,13 +23,12 @@ sidebar_categories:
     - graphql-tools/connectors
     - graphql-tools/errors
   GraphQL Server:
-    - graphql-server/index
-    - graphql-server/setup
-    - graphql-server/requests
-    - graphql-server/graphiql
-    - graphql-server/migration-graphql-server
-    - graphql-server/migration-hapi
-    - graphql-server/migration
+    - apollo-server/index
+    - apollo-server/setup
+    - apollo-server/requests
+    - apollo-server/graphiql
+    - apollo-server/migration-hapi
+    - apollo-server/migration
   Subscriptions:
     - graphql-subscriptions/index
     - graphql-subscriptions/subscriptions-to-schema
