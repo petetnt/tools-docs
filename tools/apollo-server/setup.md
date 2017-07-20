@@ -61,7 +61,7 @@ The following code snippet shows how to use GraphQL Server with Express:
 ```js
 import express from 'express';
 import bodyParser from 'body-parser';
-import { graphqlExpress } from 'graphql-server-express';
+import { graphqlExpress } from 'apollo-server-express';
 
 const PORT = 3000;
 
@@ -79,7 +79,7 @@ Connect is so similar to Express that the integration is in the same package. Th
 ```js
 import connect from 'connect';
 import bodyParser from 'body-parser';
-import { graphqlConnect } from 'graphql-server-express';
+import { graphqlConnect } from 'apollo-server-express';
 import http from 'http';
 
 const PORT = 3000;
@@ -100,7 +100,7 @@ The following code snippet shows how to use GraphQL Server with Hapi:
 
 ```js
 import hapi from 'hapi';
-import { graphqlHapi } from 'graphql-server-hapi';
+import { graphqlHapi } from 'apollo-server-hapi';
 
 const server = new hapi.Server();
 
@@ -143,7 +143,7 @@ The following code snippet shows how to use GraphQL Server with Koa:
 import koa from 'koa';
 import koaRouter from 'koa-router';
 import koaBody from 'koa-bodyparser';
-import { graphqlKoa } from 'graphql-server-koa';
+import { graphqlKoa } from 'apollo-server-koa';
 
 const app = new koa();
 const router = new koaRouter();

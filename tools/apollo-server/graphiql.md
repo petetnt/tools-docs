@@ -30,7 +30,7 @@ send the request to the GraphQL endpoint specified with `endpointURL`.
 If you are using Express, GraphiQL can be configured as follows:
 
 ```js
-import { graphiqlExpress } from 'graphql-server-express';
+import { graphiqlExpress } from 'apollo-server-express';
 
 app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
@@ -43,7 +43,7 @@ app.use('/graphiql', graphiqlExpress({
 If you are using Connect, GraphiQL can be configured as follows:
 
 ```js
-import { graphiqlConnect } from 'graphql-server-express';
+import { graphiqlConnect } from 'apollo-server-express';
 
 app.use('/graphiql', graphiqlConnect({
   endpointURL: '/graphql',
@@ -56,7 +56,7 @@ app.use('/graphiql', graphiqlConnect({
 If you are using Hapi, GraphiQL can be configured as follows:
 
 ```js
-import { graphiqlHapi } from 'graphql-server-hapi';
+import { graphiqlHapi } from 'apollo-server-hapi';
 
 server.register({
   register: graphiqlHapi,
@@ -75,7 +75,7 @@ server.register({
 If you are using Koa 2, GraphiQL can be configured as follows:
 
 ```js
-import { graphiqlKoa } from 'graphql-server-koa';
+import { graphiqlKoa } from 'apollo-server-koa';
 
 router.get('/graphiql', graphiqlKoa({ endpointURL: '/graphql' }));
 ```

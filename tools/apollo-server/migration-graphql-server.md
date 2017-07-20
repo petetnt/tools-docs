@@ -12,9 +12,9 @@ In version 0.4, Apollo Server has been renamed to GraphQL Server, to reduce conf
 
 Having all of Apollo Server in one npm package was causing some issues, particularly with TypeScript development. Starting with `0.4`, the GraphQL Server is shipping as 3 different packages:
 
-* `graphql-server-express`
-* `graphql-server-hapi`
-* `graphql-server-koa`
+* `apollo-server-express`
+* `apollo-server-hapi`
+* `apollo-server-koa`
 
 It has also been refactored to be more modular internally, but that doesn't matter from a usage perspective.
 
@@ -31,7 +31,7 @@ If you were previously importing the server plugin from `apollo-server`, you sho
 import { apolloExpress, graphiqlExpress } from 'apollo-server';
 
 // After
-import { graphqlExpress, graphiqlExpress } from 'graphql-server-express';
+import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 ```
 
 For TypeScript types:
@@ -41,7 +41,7 @@ For TypeScript types:
 import { ExpressApolloOptionsFunction } from 'apollo-server';
 
 // After
-import { ExpressGraphQLOptionsFunction } from 'graphql-server-express';
+import { ExpressGraphQLOptionsFunction } from 'apollo-server-express';
 ```
 
 ### Connect
@@ -53,7 +53,7 @@ The Connect server middleware is in the same package as the Express middleware.
 import { apolloConnect, graphiqlConnect } from 'apollo-server';
 
 // After
-import { graphqlConnect, graphiqlConnect } from 'graphql-server-express';
+import { graphqlConnect, graphiqlConnect } from 'apollo-server-express';
 ```
 
 ### Hapi
@@ -63,7 +63,7 @@ import { graphqlConnect, graphiqlConnect } from 'graphql-server-express';
 import { apolloHapi, graphiqlHapi } from 'apollo-server';
 
 // After
-import { graphqlHapi, graphiqlHapi } from 'graphql-server-hapi';
+import { graphqlHapi, graphiqlHapi } from 'apollo-server-hapi';
 ```
 
 Importing TypeScript types is the same as before.
@@ -97,7 +97,7 @@ server.register({
 import { apolloKoa, graphiqlKoa } from 'apollo-server';
 
 // After
-import { graphqlKoa, graphiqlKoa } from 'graphql-server-koa';
+import { graphqlKoa, graphiqlKoa } from 'apollo-server-koa';
 ```
 
 ```js
@@ -105,5 +105,5 @@ import { graphqlKoa, graphiqlKoa } from 'graphql-server-koa';
 import { KoaApolloOptionsFunction, KoaHandler } from 'apollo-server';
 
 // After
-import { KoaGraphQLOptionsFunction, KoaHandler } from 'graphql-server-koa';
+import { KoaGraphQLOptionsFunction, KoaHandler } from 'apollo-server-koa';
 ```
