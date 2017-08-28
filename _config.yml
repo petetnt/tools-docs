@@ -44,6 +44,7 @@ content_root: tools
 social_links:
   github: 'https://github.com/apollostack'
   twitter: '@apollostack'
+  slackInvitePage: 'https://www.apollodata.com/#slack'
 
 # API keys
 apis:
