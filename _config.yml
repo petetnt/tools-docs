@@ -22,6 +22,7 @@ sidebar_categories:
     - graphql-tools/mocking
     - graphql-tools/connectors
     - graphql-tools/errors
+    - graphql-tools/merging
   Apollo Server:
     - apollo-server/index
     - apollo-server/setup
