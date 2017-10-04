@@ -1,6 +1,5 @@
 ---
 title: Overview
-order: 0
 ---
 
 In addition to a set of fully-featured GraphQL clients, the Apollo community maintains a set of tools for building GraphQL servers, and some utilities that make it easier to work with GraphQL in general.

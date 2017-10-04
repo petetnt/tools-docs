@@ -21,7 +21,8 @@ sidebar_categories:
     - graphql-tools/scalars
     - graphql-tools/mocking
     - graphql-tools/connectors
-    - graphql-tools/errors
+    - graphql-tools/remote-schemas
+    - graphql-tools/schema-stitching
   Apollo Server:
     - apollo-server/index
     - apollo-server/setup
